@@ -5,7 +5,7 @@
 luckySentences =
 {
     /*
-    arrSortedSentence : sorted sentence array depends on 
+    arrSortedSentence : sorted sentences array
     */
     arrSortedSentence: [],
     /* parameter:
