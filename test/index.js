@@ -1,6 +1,7 @@
 ﻿/*!
  * index.js
  * Date: 14 03 2014
+ * Author : Rami Abdel Hadi
  * All the needed function for implementing index.html buttons
  */
 function init() {

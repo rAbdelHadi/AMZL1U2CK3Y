@@ -1,9 +1,14 @@
 ﻿/*!
  * Lucky Sentences
  * Date: 14 03 2014 
+ * Author : Rami Abdel Hadi
  */
 luckySentences =
 {
+    /*
+    minLuckyCharacterCount : Config for the minimmum count of lucky chracters to count the word as Lucky
+   */
+    minLuckyCharacterCount : 4,
     /*
     arrSortedSentence : sorted sentences array
     */
@@ -44,11 +49,11 @@ luckySentences =
             if (ascii != 32) {//I made an assumption that each words in the sentence splited by space
                 if (ascii % 2 && ascii >= 97 && ascii < 122) {
                     luckyCharactersCount++;
-                    if (luckyCharactersCount == 4) {
+                    if (luckyCharactersCount == luckySentences.minLuckyCharacterCount) {
                         luckyWordsCount++;
                         luckyCharactersCount = 0;
                         j = sentence.indexOf(" ", j); //to skip the rest characters in the word because it's considered lucky
-                        if (j == -1)
+                        if (j == -1)//-1 means there is no other words in the sentence
                             break;
                     }
                 }
